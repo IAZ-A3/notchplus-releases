@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  NotchPlus Sparkle Appcast
+  Hosted at: https://iaz-a3.github.io/notchplus-releases/appcast.xml
+
+  HOW TO UPDATE:
+  After building a notarized DMG, run Sparkle's generate_appcast tool:
+    $ generate_appcast /path/to/NotchPlus-1.0.0.dmg \
+        --ed-key-file ~/.sparkle_private_key \
+        --link "https://github.com/IAZ-A3/notchplus-releases/releases" \
+        --download-url-prefix "https://github.com/IAZ-A3/notchplus-releases/releases/download/v1.0.0/" \
+        --app-version "1.0.0" \
+        --build "1"
+  Then copy the generated item into this file and commit to notchplus-releases/docs/.
+-->
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>NotchPlus</title>
+        <link>https://iaz-a3.github.io/notchplus-releases/appcast.xml</link>
+        <description>NotchPlus update feed</description>
+        <language>en</language>
+
+        <!-- ── v1.0.0 ─────────────────────────────────────────────────────── -->
+        <!--
+        <item>
+            <title>NotchPlus 1.0.0</title>
+            <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>NotchPlus 1.0.0</h2>
+                <ul>
+                    <li>Initial release</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/IAZ-A3/notchplus-releases/releases/download/v1.0.0/NotchPlus-1.0.0.dmg"
+                sparkle:edSignature="REPLACE_WITH_GENERATE_APPCAST_OUTPUT"
+                length="0"
+                type="application/octet-stream" />
+        </item>
+        -->
+
+    </channel>
+</rss>
